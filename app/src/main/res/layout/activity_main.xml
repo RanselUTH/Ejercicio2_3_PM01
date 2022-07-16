@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignWithParentIfMissing="false"
+    android:layout_centerVertical="true"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logoblancouth" />
+
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        android:background="@drawable/img"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/img_1" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:background="@drawable/borde"
+        android:drawableStart="@drawable/ic_baseline_rate_review_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:gravity="bottom|start|top"
+        android:hint="Descripcion de Fotografia"
+        android:inputType="textMultiLine"
+        android:paddingStart="20dp"
+        android:textColor="#FAF7F7"
+        android:textColorHint="#F8F7F7"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <Button
+        android:id="@+id/btnFoto"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F8F7F6"
+        android:text="Tomar Foto"
+        android:textColor="#090909"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_photo_camera_24"
+        app:iconTint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FAF8F6"
+        android:text="GUARDAR"
+        android:textColor="#070707"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_save_alt_24"
+        app:iconTint="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <Button
+        android:id="@+id/btnImagenes"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FAF8F5"
+        android:text="VER IMAGEN"
+        android:textColor="#0B0A0A"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_baseline_remove_red_eye_24"
+        app:iconTint="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
